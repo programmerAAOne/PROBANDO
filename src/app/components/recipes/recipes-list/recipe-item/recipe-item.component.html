@@ -1,0 +1,35 @@
+<!-- <a 
+  class="list-group-item list-group-item-action clearfix"
+  style="cursor: pointer;"
+  routerLinkActive="active"
+  (click)="onSelected()"
+>
+
+  <div class="float-left">
+    <h4>{{ recipe.name }}</h4>
+    <p>{{ recipe.description }}</p>
+  </div>
+
+  <span class="float-right">
+    <img 
+      [src]="recipe.imagePath" 
+      [alt]="recipe.imagePath"
+      class="img-fluid"
+      width="80px"
+    >
+  </span>
+
+</a> -->
+
+<div 
+  [routerLink]="[index]"
+  class="card border-0 shadow-lg m-3"
+  routerLinkActive="active"
+  style="width: 20rem; cursor: pointer;"
+>
+  <img class="card-img-top" [src]="recipe.imagePath" [alt]="recipe.name">
+  <div class="card-body">
+    <h5 class="card-title">{{ recipe.name }}</h5>
+    <p class="card-text">{{ recipe.description }}</p>
+  </div>
+</div>
