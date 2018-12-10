@@ -43,14 +43,14 @@
           <button
             *ngIf="!authService.isUserLoggedIn()"
             routerLink="/signin"
-            class="btn btn-success"
+            class="btn btn-primary"
           >
             Login
           </button>
           <button
             *ngIf="authService.isUserLoggedIn()"
             (click)="onLogout()"
-            class="btn btn-danger"
+            class="btn btn-secondary"
           >
             Logout
           </button>
