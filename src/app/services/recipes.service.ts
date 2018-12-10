@@ -12,31 +12,14 @@ export class RecipeService {
 
   private recipes: Recipe[] = [
     new Recipe(
-      'BIZCOCHO DE LECHE EVAPORADA',
-      'El bizcocho de leche evaporada es una clásica receta, ideal para compartir en una tarde de té. Se trata de un postre hecho con leche evaporada, en vez de...', 
-      'https://okdiario.com/img/2018/10/15/bizcocho-de-leche-evaporada-487x274.jpg',
-      [
-        new Ingredients('Bread', 2),
-        new Ingredients('Chease', 4),
-      ]
-    ),
-    new Recipe(
       'A test recipe',
       'This is a simply test 2', 
-      'https://www.stockthehouse.com/wp-content/uploads/2018/06/pep-pizza.jpg',
+      'https://img-global.cpcdn.com/002_recipes/recipes_9698_v1393346452_receta_foto_00009698/751x532cq70/photo.jpg',
       [
         new Ingredients('Apples', 3)
       ]
     ),
-    new Recipe(
-      'A test recipe',
-      'This is a simply test 3', 
-      'https://www.stockthehouse.com/wp-content/uploads/2018/06/pep-pizza.jpg',
-      [
-        new Ingredients('Orange', 2),
-        new Ingredients('Salt', 2)
-      ]
-    )
+  
   ];
 
   constructor(private ingredientsService: IngredientsService) { }
